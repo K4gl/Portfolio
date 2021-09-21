@@ -209,7 +209,7 @@ section.services .card-wrapper{
     grid-template-columns:repeat(3, 1fr);
     grid-column-gap:2rem;
     grid-row-gap:6rem;
-    position: relative;
+    position: relative; 
     width: 756px;
     height: 203px;
     background: none;
@@ -217,6 +217,7 @@ section.services .card-wrapper{
     left: 50%;
     transform: translate(-50%, -50%);
     margin-bottom:15rem;
+    place-items: center;
 }
 
 section.services .card-wrapper .card{
@@ -251,7 +252,7 @@ section.services .card-wrapper .card .front-card{
 }
 
 section.services .card-wrapper .card .back-card{
-    position: absolute;
+   position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -356,6 +357,11 @@ section.freelancer p{
     font-family:"Lato", sans-serif;
 }
 
+section.freelancer a{
+    text-decoration:none;
+    text-transform: uppercase;
+}
+
 .section-heading{
     color:var(--secondary);
     text-align:center;
@@ -450,14 +456,22 @@ footer .copyright{
         height:100%;
         object-fit:cover;
     }
+
+    section.work .card-wrapper .card img {
+        height: 55%;
+        width: 100%;
+    }
+
+    .middle{
+        margin: 10px auto;
+    }
     
     section.services .card-wrapper{
-        display:contents;
-
+         display:contents;
     }
 
     section.contact .card-wrapper{
-        display:contents;
+        display:contents;   
       
     }
     
